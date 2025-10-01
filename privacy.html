@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Open Multiple URLs</title>
+  <meta name="robots" content="index,follow">
+  <style>
+    body { margin:0; font:16px/1.6 -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    main { max-width: 760px; margin: 48px auto; padding: 0 16px; }
+    h1, h2 { line-height:1.25; }
+    .muted { color:#666; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top:40px; font-size:14px; color:#666; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted"><strong>Last Updated:</strong> September 30, 2025</p>
+
+  <h2>Who We Are</h2>
+  <p>Open Multiple URLs ("we", "us", "our") provides a Chrome extension that helps you open multiple URLs at once (the "Extension").
+  This policy explains what data the Extension processes and how it is handled. If you have any questions, contact us at
+  <a href="mailto:openmultipleurls.app@gmail.com">openmultipleurls.app@gmail.com</a>.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>We do not run servers, collect analytics, or sell personal data.</li>
+    <li>All processing happens locally in your browser. Data persists only in your browser’s local storage until you clear it or uninstall the Extension.</li>
+    <li>The Extension requests only the permissions needed to open URLs, read the URLs of your current tabs when you ask it to, and extract links from the active page when you explicitly press the relevant button.</li>
+  </ul>
+
+  <h2>Data We Process (Locally)</h2>
+  <p><strong>URLs you enter or import.</strong> When you type, paste, or import .txt/.csv files, the Extension processes those URLs locally to open them as tabs.
+  If you proceed to open them, the list is saved to a local "History" entry so you can reopen or copy it later.</p>
+
+  <p><strong>History of URL lists.</strong> The Extension stores a chronological history of the URL lists you opened (timestamp + list of URLs) in chrome.storage.local.
+  You can clear all history from Settings at any time.</p>
+
+  <p><strong>Configuration settings.</strong> We store local-only settings such as delay between opening tabs, whether to open in a new window, tab grouping options (title/color),
+  and appearance (auto/light/dark). Some builds may also include options like HTTPS normalization or deduplication.</p>
+
+  <p><strong>“Add from tabs”.</strong> On your explicit action, the Extension reads the URLs of the tabs in the current Chrome window and inserts them into the input area.
+  No page content is read, and nothing is sent anywhere. These URLs are only saved to History if you choose to open them.</p>
+
+  <p><strong>“Add links from page”.</strong> On your explicit action, the Extension injects a small script into the active tab to extract anchor hrefs (HTTP/HTTPS links) and place them into the input area.
+  The script does not read arbitrary page content beyond link addresses. Links are saved to History only if you then open them.</p>
+
+  <p><strong>Files you import (TXT/CSV) and exports.</strong> If you import a .txt or .csv file, it is read locally by the browser; the Extension does not upload files.
+  You may export your current list to a .txt file locally at any time.</p>
+
+  <h2>What We Do Not Collect</h2>
+  <ul>
+    <li>No account data, payment data, or precise location data.</li>
+    <li>No cookies, advertising IDs, or third-party analytics (e.g., Google Analytics).</li>
+    <li>No remote logging or telemetry; we do not transmit your lists of URLs to external servers.</li>
+  </ul>
+
+  <h2>Permissions We Request and Why</h2>
+  <p><strong>storage</strong> — To save your local settings and History (URL lists) in chrome.storage.local.</p>
+  <p><strong>tabs / tabGroups</strong> — To open multiple tabs and (optionally) group them under a title/color you choose.</p>
+  <p><strong>sidePanel</strong> — To show the Extension’s interface in the Chrome side panel.</p>
+  <p><strong>scripting</strong> — To run the user-initiated "Add links from page" script on the active tab to collect HTTP/HTTPS links.</p>
+  <p><strong>Host permissions: http://*/* and https://*/*</strong> — Required to open the URLs you provide and to extract links from the active page when you ask us to.
+  The Extension does not read full page content or browsing history beyond these explicit actions.</p>
+
+  <h2>Install Behavior</h2>
+  <p>On first install, the Extension may open a welcome or information page in a new tab. No personal data is collected during this step.</p>
+
+  <h2>Data Retention and Your Control</h2>
+  <ul>
+    <li>Settings and History remain in your browser until you clear them or uninstall the Extension.</li>
+    <li>You can clear all History in Settings.</li>
+    <li>Uninstalling the Extension deletes its local data.</li>
+  </ul>
+
+  <h2>Legal Basis (EEA/UK)</h2>
+  <p>We process your data (locally) as necessary to provide the Extension’s functionality (performance of a contract) and our legitimate interests in maintaining secure, useful tools.
+  Where consent is required by law (e.g., to run a feature you trigger), we rely on your explicit action.</p>
+
+  <h2>Your Rights</h2>
+  <p>Where applicable, you may have rights to access, correct, delete, or object to processing of your personal data.
+  To exercise your rights, contact us at <a href="mailto:openmultipleurls.app@gmail.com">openmultipleurls.app@gmail.com</a>. Because we do not run servers or keep centralized copies,
+  we may ask you to use built-in controls (e.g., Clear History) to complete certain requests.</p>
+
+  <h2>Children’s Privacy</h2>
+  <p>The Extension is intended for users 16+ and is not directed to children. If you believe a child has provided data via the Extension,
+  please contact us and uninstall the Extension from the device.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy to reflect improvements or legal requirements. Material changes will be reflected by an updated "Last Updated" date at the top of this document.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions or requests regarding this policy or the Extension, contact: <a href="mailto:openmultipleurls.app@gmail.com">openmultipleurls.app@gmail.com</a>.</p>
+
+  <footer>
+    <p>© Open Multiple URLs</p>
+  </footer>
+</main>
+</body>
+</html>
