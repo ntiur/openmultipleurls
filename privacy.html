@@ -43,14 +43,15 @@
   <p><strong>Configuration settings.</strong> We store local-only settings such as delay between opening tabs, whether to open in a new window, tab grouping options (title/color),
   and appearance (auto/light/dark). Some builds may also include options like HTTPS normalization or deduplication.</p>
 
-  <p><strong>“Add open tabs”.</strong> On your explicit action, the Extension reads the URLs of the tabs in the current Chrome window and inserts them into the input area.
-  No page content is read, and nothing is sent anywhere. These URLs are only saved to History if you choose to open them.</p>
+  <p><strong>“Add open tabs”.</strong> On your explicit action, the Extension reads the URLs of the tabs in the current Chrome window and inserts them into the input area. 
+    No page content is read, and nothing is sent anywhere. These URLs are only saved to History if you choose to open them.</p>
 
   <p><strong>“Add links from page”.</strong> On your explicit action, the Extension injects a small script into the active tab to extract anchor hrefs (HTTP/HTTPS links) and place them into the input area.
   The script does not read arbitrary page content beyond link addresses. Links are saved to History only if you then open them.</p>
 
-  <p><strong>Files you import (TXT/CSV) and exports.</strong> If you import a .txt or .csv file, it is read locally by the browser; the Extension does not upload files.
-  You may export your current list to a .txt file locally at any time.</p>
+  <p><strong>Files you import (TXT/CSV) and exports.</strong> If you import a .txt or .csv file, it is read locally by the browser; the Extension does not upload files. 
+    You may export your current list to a .txt file locally at any time. When you press the Copy button in the toolbar, the current list is written to your clipboard. 
+    This happens locally only and nothing is transmitted anywhere.</p>
 
   <h2>What We Do Not Collect</h2>
   <ul>
@@ -64,8 +65,8 @@
   <p><strong>tabs / tabGroups</strong> — To open multiple tabs and (optionally) group them under a title/color you choose.</p>
   <p><strong>sidePanel</strong> — To show the Extension’s interface in the Chrome side panel.</p>
   <p><strong>scripting</strong> — To run the user-initiated "Add links from page" script on the active tab to collect HTTP/HTTPS links.</p>
-  <p><strong>Host permissions: http://*/* and https://*/*</strong> — Required to open the URLs you provide and to extract links from the active page when you ask us to.
-  The Extension does not read full page content or browsing history beyond these explicit actions.</p>
+  <p><strong>Host permissions: http://*/* and https://*/*</strong> — Required to open the URLs you provide, to extract links from the active page when you ask us to, and to read the URLs of your open tabs — but only when you explicitly use the Add open tabs feature. 
+    The Extension does not read full page content or your browsing history.</p>
 
   <h2>Install Behavior</h2>
   <p>On first install, the Extension may open a welcome or information page in a new tab. No personal data is collected during this step.</p>
